@@ -1,6 +1,6 @@
 # twarc_jsonl-to-txt
 
-Simple script that writes tweets from jsonl files into a simple txt file for easy text analysis.
+Simple Python-script that writes tweets from jsonl files into a simple txt file for easy text analysis.
 
 Result:
 
