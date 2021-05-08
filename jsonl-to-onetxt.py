@@ -5,11 +5,11 @@ import jsonlines
 tweetsnumber = 0
 tweets = []
 
-# scans als jsonl-files (wit a specific language) and writs the tweet text and tweet-ID in a txt file
+# scans all jsonl-files (with a specific language) and writes the tweet text and tweet-ID in a txt file
 directory = os.getcwd()
 for entry in os.scandir(directory):
     if entry.path.endswith(".jsonl") and entry.is_file():
-        print("file opened")
+        #print("file opened") #gibt "file opened" aus, wenn Datei geöffnet wurde (Kontrolle)
         with jsonlines.open(entry) as reader:
             for obj in reader:
                 if not "retweeted_status" in obj:
