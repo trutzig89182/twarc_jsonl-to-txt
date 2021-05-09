@@ -14,7 +14,7 @@ Result:
 
 The "json-gz-to-txt" script writes tweets from gzipped jsonl-files into a seperate txt-file for each tweet, where the file name is the Tweet-ID, while the file contains the Tweets full text. This allows for a better seperation of tweets when using AntConc.
 
-# Ho to use the scripts
+# How to use the scripts
 
 Make sure you have Python 3.8 and the packages for jsonlines and gzip installed.
 
