@@ -1,4 +1,4 @@
-[![CC BY 4.0][cc-by-shield]][cc-by]
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
 # twarc_jsonl-to-txt
 
@@ -29,6 +29,8 @@ Open the folder with terminal. Type "python jsonl-gz-to-txt.py" or "python jsonl
 Go to the subirectory "./txt_einzeln" to get the txt files.
 
 
-[cc-by]: http://creativecommons.org/licenses/by/4.0/
-[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
