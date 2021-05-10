@@ -27,3 +27,8 @@ Make shure there is no subdirectory named "./txt_einzeln/" or rename the directo
 Open the folder with terminal. Type "python jsonl-gz-to-txt.py" or "python jsonl-to-onetxt.py" and push enter. You should see the counter of the tweets writen in the subdirectory start in your terminal window.
 
 Go to the subirectory "./txt_einzeln" to get the txt files.
+
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
