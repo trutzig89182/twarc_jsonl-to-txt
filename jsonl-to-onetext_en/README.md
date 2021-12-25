@@ -10,9 +10,9 @@ The "jsonl-to-onetxt_en.py" script scans the given folder for jsonl files and wr
 
 Result:
 
-&lt;Tweet-ID1&lt; Full text of tweet 1
+&lt;Tweet-ID1&gt; Full text of tweet 1
 
-&lt;Tweet-ID2&lt; Full text of tweet 2
+&lt;Tweet-ID2&gt; Full text of tweet 2
 …
 
 The angle brackets should be recognized by AntConc as tags and not included in the word counting.
