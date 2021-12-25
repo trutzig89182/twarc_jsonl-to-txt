@@ -10,9 +10,9 @@ The "jsonl-to-onetxt_en.py" script scans the given folder for jsonl files and wr
 
 Result:
 
-<Tweet-ID1> Full text of tweet 1
+&lt;Tweet-ID1&lt; Full text of tweet 1
 
-<Tweet-ID2> Full text of tweet 2
+&lt;Tweet-ID2&lt; Full text of tweet 2
 …
 
 The angle brackets should be recognized by AntConc as tags and not included in the word counting.
@@ -22,7 +22,7 @@ The script writes tweets into a seperate txt-file in the subdirectory “results
 
 Make sure you have Python 3.8 and the packages for jsonlines and gzip installed.
 
-Copy the script to the folder your jsonl or jsonl.gz files are in. 
+Copy the script to the folder your jsonl or jsonl.gz files are in.
 
 Make shure there is no subdirectory named "./results_txt_en/" or rename the directory in the script.
 
