@@ -10,7 +10,7 @@ tweets = []
 directory = os.getcwd()
 os.mkdir("results_txt_en/")
 
-seperator = "stopñä stopñä stopñä stopñä stopñä stopñä stopñä stopñä stopñä"
+seperator = "stopñä stopñä stopñä stopñä stopñä stopñä stopñä stopñä stopñä" #can be used to seperate tweets with stopwords
 for entry in os.scandir(directory):
     if entry.path.endswith(".jsonl.gz") and entry.is_file():
         #print("file opened") #gibt "file opened" aus, wenn Datei geöffnet wurde (Kontrolle)
@@ -24,10 +24,11 @@ for entry in os.scandir(directory):
                             print(tweetsnumber)
                             with open(f"results_txt_en/tweets.txt", "a") as file:
                                 gtid = obj["id_str"]
-                                gttext = obj["full_text"]
-                                gtentry = "<" + gtid + "> " + gttext + "\n\n" + seperator + "\n\n"
+                                gttext_a = obj["full_text"]
+                                gttext = gttext_a.replace("\n", " ") #replace löscht zeilenumbrüche
+                                gtentry = "<" + gtid + "> " + gttext + "\n"
                                 file.write(gtentry)
 # hängt Anzahl an in die Datei geschreiben tweets am Ende auskommentiert an die Datei ran.
 with open(f"results_txt_en/tweets.txt", "a") as file:
-    gtentry = "< Total number of tweets in this file: " + tweetsnumber + ">"
+    gtentry = "\n\n" + "< Total number of tweets in this file: " + str(tweetsnumber) + ">"
     file.write(gtentry)
